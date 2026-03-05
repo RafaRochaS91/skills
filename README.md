@@ -8,25 +8,21 @@ These can be used in conjunction with hooks or just evoked via slash commands.
 
 ## Installation
 
-### Install all skills globally
+Copy the skill folder you want into your Claude skills directory.
+
+**Global (available in all projects):**
 
 ```bash
-npx skills add RafaRochaS91/skills -g
+cp -r skills/<skill-name> ~/.claude/skills/
 ```
 
-### Install a specific skill globally
+**Project-level:**
 
 ```bash
-npx skills add RafaRochaS91/skills@<skill-name> -g
+cp -r skills/<skill-name> .claude/skills/
 ```
 
-### Install into a specific project
-
-```bash
-npx skills add RafaRochaS91/skills@<skill-name>
-```
-
-Skills are installed into `.claude/skills/` (project-level) or `~/.claude/skills/` (global). Once installed, invoke them via slash commands in Claude Code, e.g. `/memory-review`.
+Once copied, invoke the skill via slash command in Claude Code, e.g. `/memory-review`.
 
 ## Skills
 
