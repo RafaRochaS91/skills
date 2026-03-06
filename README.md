@@ -8,29 +8,27 @@ These can be used in conjunction with hooks or just evoked via slash commands.
 
 ## Installation
 
-Copy the skill folder you want into your Claude skills directory.
-
-**Global (available in all projects):**
+**All skills (global):**
 
 ```bash
-cp -r skills/<skill-name> ~/.claude/skills/
+npx skills add RafaRochaS91/skills -g
 ```
 
-**Project-level:**
+**All skills (project-level):**
 
 ```bash
-cp -r skills/<skill-name> .claude/skills/
+npx skills add RafaRochaS91/skills
 ```
 
-Once copied, invoke the skill via slash command in Claude Code, e.g. `/memory-review`.
+Once installed, invoke skills per the usage instructions in the table below. Not all skills are slash-command invocable — check the Usage column for each.
 
 ## Skills
 
-| Skill | Description | Usage |
-|---|---|---|
-| `memory-review` | Reviews and curates `memory/MEMORY.md` to remove stale, duplicate, or low-signal entries. | `/memory-review` |
-| `sw-architecture` | Applies DDD feature-based architecture conventions to a project. Scaffolds structure, audits existing code, or generates a `CLAUDE.md`. | `/sw-architecture` |
-| `sw-effect` | Enforces Effect.ts conventions for error modeling and composition across DDD layers. Designed to follow `sw-architecture`. | `/sw-effect` or `/sw-effect --verify-docs` |
+| Skill | Description | Invocation | Usage |
+|---|---|---|---|
+| `memory-review` | Reviews and curates `memory/MEMORY.md` to remove stale, duplicate, or low-signal entries. | Slash command | `/memory-review` |
+| `sw-architecture` | Applies DDD feature-based architecture conventions to a project. Scaffolds structure, audits existing code, or generates a `CLAUDE.md`. | Slash command | `/sw-architecture` |
+| `sw-effect` | Enforces Effect.ts conventions for error modeling and composition across DDD layers. Designed to follow `sw-architecture`. | Slash command | `/sw-effect` or `/sw-effect --verify-docs` |
 
 ## Contributing
 
